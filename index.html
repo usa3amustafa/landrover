@@ -28,6 +28,8 @@
           <!-- nav links -->
 
           <ul class="nav-links">
+            <li><i class="fa-solid fa-bars hamburger hidden"></i></li>
+
             <li><a class="nav-link active" href="#header">Top</a></li>
             <li><a class="nav-link" href="#about">About Us</a></li>
             <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
@@ -57,22 +59,26 @@
             From anywhere. Anytime.
           </h2>
 
-          <div class="header-text-btns">
-            <a href="#" class="header-text-btn"
-              ><img src="./img/appstore-btn.png" alt=""
-            /></a>
-            <a href="#" class="header-text-btn"
-              ><img src="./img/googleplay-btn.png" alt=""
-            /></a>
+          <div class="btns">
+            <div class="header-btn">
+              <a href="#" class="header-text-btn"
+                ><img src="./img/appstore-btn.png" alt=""
+              /></a>
+            </div>
+            <div class="header-btn">
+              <a href="#" class="header-text-btn"
+                ><img src="./img/googleplay-btn.png" alt=""
+              /></a>
+            </div>
           </div>
         </article>
 
         <video
-          src="./img/dronee_video.mp4"
+          class="video"
+          src="./img/dronee_video_AdobeCreativeCloudExpress.mp4"
           autoplay
           loop
           poster="./img/drone-video.png"
-          class="video"
         ></video>
       </div>
 
@@ -185,7 +191,7 @@
               <span class="question-text">Question 1?</span>
             </h2>
 
-            <p class="answer-text hidden">
+            <p class="answer-text hide-answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               labore dolores quos amet quisquam, obcaecati cumque eius
               excepturi, nihil optio explicabo facilis ex possimus. Laboriosam
@@ -276,21 +282,27 @@
               Get the Dronee app now! It is quick & simple...
             </h2>
 
-            <div class="header-text-btns">
-              <a href="#" class="header-text-btn"
-                ><img src="./img/download-apple-btn.png" alt=""
-              /></a>
-              <a href="#" class="header-text-btn"
-                ><img src="./img/download-playstore-btn.png" alt=""
-              /></a>
+            <div class="btns download-btns">
+              <div class="download-btn">
+                <a href="#" class="download-btn-btn"
+                  ><img src="./img/download-apple-btn.png" alt=""
+                /></a>
+              </div>
+              <div class="download-btn">
+                <a href="#" class="download-btn-btn"
+                  ><img src="./img/download-playstore-btn.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
 
-          <img
-            src="./img/download-now-img.png"
-            class="download-now-img"
-            alt=""
-          />
+          <div class="download-now-img">
+            <img
+              src="./img/download-now-img.png"
+              class="download-now-img-img"
+              alt=""
+            />
+          </div>
         </article>
       </div>
     </section>
