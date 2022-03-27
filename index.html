@@ -17,27 +17,53 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- javascript -->
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <!-- header section start  -->
-    <header class="header">
+    <section class="header" id="headerSection">
       <!-- navbar  -->
 
-      <nav class="navbar">
+      <nav class="navbar nav-sticky">
         <div class="container nav">
           <!-- nav links -->
 
+          <div class="menu-icon hidden">
+            <i class="fa-solid fa-bars hamburger"></i>
+          </div>
+
           <ul class="nav-links">
-            <li class="menu-icon hidden">
-              <i class="fa-solid fa-bars hamburger"></i>
+            <li>
+              <a class="nav-link active headerSection" href="#headerSection"
+                >Top</a
+              >
             </li>
 
-            <li><a class="nav-link active" href="#header">Top</a></li>
-            <li><a class="nav-link" href="#about">About Us</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#faq">FAQs</a></li>
-            <li><a class="nav-link" href="#download">DOWNLOAD</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav-link aboutSection" href="#aboutSection">About Us</a>
+            </li>
+
+            <li>
+              <a class="nav-link howItWorksSection" href="#howItWorksSection"
+                >How It Works</a
+              >
+            </li>
+
+            <li><a class="nav-link faqSection" href="#faqSection">FAQs</a></li>
+
+            <li>
+              <a class="nav-link downloadSection" href="#downloadSection"
+                >DOWNLOAD</a
+              >
+            </li>
+
+            <li>
+              <a class="nav-link contactSection" href="#contactSection"
+                >Contact</a
+              >
+            </li>
 
             <!-- logo   -->
             <li>
@@ -45,7 +71,15 @@
                 <img src="./img/logo.svg" alt="drone logo" class="logo" />
               </a>
             </li>
+
+            <!-- close nav icon -->
+            <li class="close-icon hidden"><i class="fa-solid fa-xmark"></i></li>
           </ul>
+
+          <!-- logo on mobile screen -->
+          <a href="#" class="hidden logo-mobile"
+            ><img src="./img/logo.svg" alt=""
+          /></a>
         </div>
       </nav>
 
@@ -80,16 +114,17 @@
           src="./img/dronee_video_AdobeCreativeCloudExpress.mp4"
           autoplay
           loop
+          muted
           poster="./img/drone-video.png"
         ></video>
       </div>
 
       <!-- header bg -->
       <img src="./img/header-bg.png" alt="" class="header-bg" />
-    </header>
+    </section>
 
     <!-- about section start  -->
-    <section class="about" id="about">
+    <section class="about" id="aboutSection">
       <div class="container">
         <h2 class="section-title">About Us</h2>
 
@@ -106,7 +141,7 @@
             and its camera output.
           </p>
 
-          <p class="aboutus-desc last">Your options are endless:</p>
+          <p class="aboutus-desc">Your options are endless:</p>
 
           <ul class="aboutus-list">
             <li class="aboutus-listitem">
@@ -131,7 +166,7 @@
     </section>
 
     <!-- how it works -->
-    <section class="how-it-works" id="how-it-works">
+    <section class="how-it-works" id="howItWorksSection">
       <div class="container">
         <h2 class="section-title">How It Works</h2>
 
@@ -178,7 +213,7 @@
     </section>
 
     <!-- faqs section  -->
-    <section class="faq" id="faq">
+    <section class="faq" id="faqSection">
       <div class="container">
         <h2 class="section-title">FAQs</h2>
 
@@ -230,7 +265,7 @@
           <article class="faq-item">
             <h2 class="question">
               <div class="colored-bg">
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-right rotate"></i>
               </div>
               <span class="question-text">Question 3?</span>
             </h2>
@@ -274,7 +309,7 @@
     </section>
 
     <!-- download section -->
-    <section class="download" id="download">
+    <section class="download" id="downloadSection">
       <div class="container download-section">
         <h2 class="section-title download-section-title">Download Now</h2>
 
@@ -310,7 +345,7 @@
     </section>
 
     <!-- contact-section -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contactSection">
       <div class="container">
         <h2 class="section-title">
           Have something to say or a question to ask? Contact us!
