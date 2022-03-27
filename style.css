@@ -454,8 +454,11 @@ textarea:focus {
     display: none;
   }
 
-  .hamburger {
+  .menu-icon {
     display: block;
+  }
+
+  .hamburger {
     font-size: 2rem;
   }
 
