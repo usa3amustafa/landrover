@@ -448,6 +448,9 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .header-bg {
+    top: 35%;
+  }
   /* navbar */
 
   .nav-link {
