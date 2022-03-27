@@ -491,6 +491,10 @@ textarea:focus {
 
   /* download now */
 
+  .download {
+    margin-top: 10rem;
+  }
+
   .download-now {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -499,16 +503,16 @@ textarea:focus {
   }
 
   .download-now-img {
-    position: absolute;
-    top: 110%;
+    width: 67.5%;
 
-    padding: 2rem;
+    position: absolute;
+    top: -100%;
+    left: 35%;
   }
 
   /* contact-section */
 
   .contact {
-    margin-top: 20rem;
   }
 
   form {
@@ -523,10 +527,49 @@ textarea:focus {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 640px) {
+  .download-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .download-now-img {
+    width: 90%;
+
+    top: -110%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 550px) {
+  .download-now-img {
+    width: 90%;
+
+    top: -100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .download-now-img {
+    width: 100%;
+
+    top: -90%;
+  }
 }
 
 @media (max-width: 375px) {
+  .download {
+    margin-top: -10rem;
+  }
+  .download-section-title {
+    align-self: center;
+  }
+
+  .download-now-img {
+    top: -50%;
+  }
+
   .download-btns {
     flex-direction: column;
     align-items: center;
