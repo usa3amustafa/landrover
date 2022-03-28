@@ -64,7 +64,7 @@ const overlay = document.querySelector('.overlay')
 
 const bodyHeight = document.body.getBoundingClientRect().height
 
-overlay.style.height = `${bodyHeight}px`
+overlay.style.height = `${bodyHeight + 500}px`
 
 const btnCloseModal1 = document.querySelector('.close-modal-1')
 const btnsOpenModal1 = document.querySelectorAll('.header-text-btn')
