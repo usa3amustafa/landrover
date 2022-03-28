@@ -60,16 +60,24 @@ faqItems.forEach(faqItem => {
 
 // modal header
 
+const overlay = document.querySelector('.overlay')
+
+const bodyHeight = document.body.getBoundingClientRect().height
+
+overlay.style.height = `${bodyHeight}px`
+
 const btnCloseModal1 = document.querySelector('.close-modal-1')
 const btnsOpenModal1 = document.querySelectorAll('.header-text-btn')
 const modal1 = document.querySelector('.modal-1')
 
 const openModal1 = function () {
   modal1.classList.remove('hidden')
+  overlay.classList.remove('hidden')
 }
 
 const closeModal1 = function () {
   modal1.classList.add('hidden')
+  overlay.classList.add('hidden')
 }
 
 for (let i = 0; i < btnsOpenModal1.length; i++)
@@ -78,12 +86,12 @@ for (let i = 0; i < btnsOpenModal1.length; i++)
 btnCloseModal1.addEventListener('click', closeModal1)
 
 document.addEventListener('keydown', function (e) {
-  // console.log(e.key);
-
   if (e.key === 'Escape' && !modal1.classList.contains('hidden')) {
     closeModal1()
   }
 })
+
+overlay.addEventListener('click', closeModal1)
 
 // modal download
 
@@ -93,10 +101,12 @@ const modal2 = document.querySelector('.modal-2')
 
 const openModal2 = function () {
   modal2.classList.remove('hidden')
+  overlay.classList.remove('hidden')
 }
 
 const closeModal2 = function () {
   modal2.classList.add('hidden')
+  overlay.classList.add('hidden')
 }
 
 for (let i = 0; i < btnsOpenModal2.length; i++)
@@ -105,9 +115,9 @@ for (let i = 0; i < btnsOpenModal2.length; i++)
 btnCloseModal2.addEventListener('click', closeModal2)
 
 document.addEventListener('keydown', function (e) {
-  // console.log(e.key);
-
   if (e.key === 'Escape' && !modal2.classList.contains('hidden')) {
     closeModal2()
   }
 })
+
+overlay.addEventListener('click', closeModal2)
