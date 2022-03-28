@@ -292,6 +292,7 @@ section {
 
 .download-btn-btn {
   width: 15rem;
+  cursor: pointer;
 }
 
 .header-btn + .header-btn {
