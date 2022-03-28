@@ -52,8 +52,6 @@ faqItems.forEach(faqItem => {
   const questionIcon = question.querySelector('.icon')
   const answer = faqItem.querySelector('.answer-text')
 
-  console.log(question)
-
   question.addEventListener('click', () => {
     answer.classList.toggle('hide-answer')
     questionIcon.classList.toggle('rotate')
