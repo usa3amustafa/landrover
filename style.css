@@ -27,6 +27,7 @@
   --gradient-bg: linear-gradient(var(--pri-clr), var(--pri-clr-dark));
 
   --white-clr-op-10: rgb(255, 255, 255, 0.1);
+  --white-clr-op-3: rgb(255, 255, 255, 0.25);
   --white-clr-op-5: rgb(255, 255, 255, 0.5);
 
   --transition: all 0.2s ease-in;
@@ -102,6 +103,98 @@ section {
   left: 0;
   width: 100%;
   z-index: 1;
+}
+
+/* modal */
+
+.modal {
+  background-color: var(--white-clr-op-10);
+
+  border: 2px solid var(--text-clr-light);
+  border-radius: 2rem;
+  padding: 2rem;
+
+  width: 90%;
+  max-width: 1180px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+  z-index: 10;
+}
+
+.modal-text {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.modal-text-small {
+  margin-bottom: 1rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: var(--text-clr);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.modal-input {
+  align-self: center;
+
+  border: 2px solid var(--text-clr-light);
+  border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+}
+
+.modal-input-email {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.modal-input-email:focus {
+  border: none;
+}
+
+.send-email-btn {
+  cursor: pointer;
+}
+
+.send-icon {
+  font-size: 2rem;
+}
+
+.modal-logo {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 5;
 }
 
 /* header */
@@ -631,6 +724,17 @@ textarea:focus {
 
     top: -110%;
     left: 0%;
+  }
+
+  /* modal */
+
+  .modal-footer {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .modal-logo {
+    margin-right: auto;
   }
 }
 

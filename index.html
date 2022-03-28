@@ -98,12 +98,12 @@
 
           <div class="btns">
             <div class="header-btn">
-              <a href="#" class="header-text-btn"
+              <a href="#" class="header-text-btn show-modal"
                 ><img src="./img/appstore-btn.png" alt=""
               /></a>
             </div>
             <div class="header-btn">
-              <a href="#" class="header-text-btn"
+              <a href="#" class="header-text-btn show-modal"
                 ><img src="./img/googleplay-btn.png" alt=""
               /></a>
             </div>
@@ -336,12 +336,12 @@
 
             <div class="btns download-btns">
               <div class="download-btn">
-                <a href="#" class="download-btn-btn"
+                <a href="#" class="download-btn-btn show-modal"
                   ><img src="./img/download-apple-btn.png" alt=""
                 /></a>
               </div>
               <div class="download-btn">
-                <a href="#" class="download-btn-btn"
+                <a href="#" class="download-btn-btn show-modal"
                   ><img src="./img/download-playstore-btn.png" alt=""
                 /></a>
               </div>
@@ -400,5 +400,37 @@
         <img src="./img/logo.svg" alt="" class="footer-logo" />
       </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="modal">
+      <button class="close-modal">&times;</button>
+
+      <!-- modal text -->
+      <h2 class="modal-text">
+        Hey there, <br />
+        Unfortunately, we are currently working on the new and upgraded version
+        of the Dronee app and it isn’t available at the moment. Can we send you
+        an email once it is ready?
+      </h2>
+      <h3 class="modal-text-small">
+        (We promise we won’t send you anything else)
+      </h3>
+
+      <div class="modal-footer">
+        <div class="modal-input">
+          <input
+            type="email"
+            class="modal-input-email"
+            placeholder="Email Address"
+          />
+          <div class="colored-bg send-email-btn">
+            <i class="fa-solid fa-chevron-right send-icon"></i>
+          </div>
+        </div>
+        <img src="./img/logo.svg" alt="logo" class="modal-logo" />
+      </div>
+    </div>
+
+    <div class="overlay"></div>
   </body>
 </html>
