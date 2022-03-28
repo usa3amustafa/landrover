@@ -63,7 +63,7 @@ img {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .section-title {
@@ -233,6 +233,10 @@ section {
   gap: 0.5rem;
 
   margin-bottom: 1rem;
+}
+
+.list-icon {
+  margin-top: -0.3rem;
 }
 
 .aboutus-listitem:last-child {
@@ -474,6 +478,14 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  .download {
+    margin-top: 10rem;
+  }
+
   .header-bg {
     top: 35%;
   }
@@ -595,10 +607,14 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  .download {
+    margin-top: 0rem;
+  }
+
   .download-section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 20rem auto;
   }
 
   .download-now-img {
@@ -626,9 +642,18 @@ textarea:focus {
 }
 
 @media (max-width: 375px) {
+  section {
+    padding: 2rem 0;
+  }
+
   .download {
     margin-top: -10rem;
   }
+
+  .download-section {
+    grid-template-rows: 25rem auto;
+  }
+
   .download-section-title {
     align-self: center;
   }
