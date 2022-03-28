@@ -58,33 +58,56 @@ faqItems.forEach(faqItem => {
   })
 })
 
-// modal
+// modal header
 
-const btnCloseModal = document.querySelector('.close-modal')
-const btnsOpenModal = document.querySelectorAll('.show-modal')
-const modal = document.querySelector('.modal')
-const overlay = document.querySelector('.overlay')
+const btnCloseModal1 = document.querySelector('.close-modal-1')
+const btnsOpenModal1 = document.querySelectorAll('.header-text-btn')
+const modal1 = document.querySelector('.modal-1')
 
-const openModal = function () {
-  modal.classList.remove('hidden')
-  overlay.classList.remove('hidden')
+const openModal1 = function () {
+  modal1.classList.remove('hidden')
 }
 
-const closeModal = function () {
-  modal.classList.add('hidden')
-  overlay.classList.add('hidden')
+const closeModal1 = function () {
+  modal1.classList.add('hidden')
 }
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener('click', openModal)
+for (let i = 0; i < btnsOpenModal1.length; i++)
+  btnsOpenModal1[i].addEventListener('click', openModal1)
 
-btnCloseModal.addEventListener('click', closeModal)
-overlay.addEventListener('click', closeModal)
+btnCloseModal1.addEventListener('click', closeModal1)
 
 document.addEventListener('keydown', function (e) {
   // console.log(e.key);
 
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal()
+  if (e.key === 'Escape' && !modal1.classList.contains('hidden')) {
+    closeModal1()
+  }
+})
+
+// modal download
+
+const btnCloseModal2 = document.querySelector('.close-modal-2')
+const btnsOpenModal2 = document.querySelectorAll('.download-btn-btn')
+const modal2 = document.querySelector('.modal-2')
+
+const openModal2 = function () {
+  modal2.classList.remove('hidden')
+}
+
+const closeModal2 = function () {
+  modal2.classList.add('hidden')
+}
+
+for (let i = 0; i < btnsOpenModal2.length; i++)
+  btnsOpenModal2[i].addEventListener('click', openModal2)
+
+btnCloseModal2.addEventListener('click', closeModal2)
+
+document.addEventListener('keydown', function (e) {
+  // console.log(e.key);
+
+  if (e.key === 'Escape' && !modal2.classList.contains('hidden')) {
+    closeModal2()
   }
 })
