@@ -92,7 +92,13 @@ document.addEventListener('keydown', function (e) {
   }
 })
 
-overlay1.addEventListener('click', closeModal1)
+overlay1.addEventListener('click', e => {
+  if (e.target.classList.contains('overlay-1')) {
+    closeModal1()
+  } else {
+    return
+  }
+})
 
 // modal download
 
@@ -121,4 +127,10 @@ document.addEventListener('keydown', function (e) {
   }
 })
 
-overlay2.addEventListener('click', closeModal2)
+overlay2.addEventListener('click', e => {
+  if (e.target.classList.contains('overlay-2')) {
+    closeModal2()
+  } else {
+    return
+  }
+})
