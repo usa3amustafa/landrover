@@ -205,9 +205,9 @@ section {
 
 .header {
   background: radial-gradient(
-    circle at 0% 60%,
+    circle at 0% 50%,
     var(--pri-clr-op-5) 0%,
-    var(--blue-clr-op-05) 20%
+    var(--blue-clr-op-05) 15%
   );
 
   position: relative;
